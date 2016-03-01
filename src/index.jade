@@ -1,0 +1,22 @@
+extends _layouts/base
+
+block content
+  .container
+    .game-scores
+      h2 Current Score
+      h2.score
+    .play-panel
+      .choices.hidden
+        button.rock.twa.twa-fist(name="rock") Rock
+        button.paper.twa.twa-hand(name="paper") Paper
+        button.scissors.twa.twa-v(name="scissors") Scissors
+      .play-area.hidden
+        .user-choice.twa
+        .comp-choice.twa
+        .result-panel
+          h1.result
+          button.restart Next Round
+          button.new-game.hidden New Game
+    .round-scores
+      h3 This Round
+      h4.round-score

@@ -1,0 +1,80 @@
+// Normalize Styles
+@import 'node_modules/normalize.css/normalize';
+@import 'twemoji-awesome';
+
+$black: #000;
+// Box sizing partial styles:
+// Apply a natural box layout model to all elements
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ccc;
+}
+
+.game-scores,
+.round-scores {
+  text-align: center;
+}
+
+.play-panel {
+  width: 100%;
+  height: 500px;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+
+  .play-area {
+    position: relative;
+    display: flex;
+    width: 100%;
+  }
+
+  .result-panel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+  }
+
+  .choices {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .rock,
+  .paper,
+  .scissors {
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    background-size: 150px;
+    border:0;
+    padding-top: 150px;
+    font-weight: bold;
+  }
+
+  .comp-choice,
+  .user-choice {
+    height: 500px;
+    width: 50%;
+    display: inline-block;
+    margin: 0;
+    background-size: 300px;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
